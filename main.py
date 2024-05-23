@@ -4,9 +4,9 @@ import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 
 scope = "playlist-modify-public"
-CLIENT_ID = "844053f26cdd4eed867489e941524e42"
-CLIENT_SECRET = "f26a0b46b82d4e99953131f9ec8ee195"
-REDIRECT_URI = "http://example.com"
+CLIENT_ID = "[YOUR CLIENT ID]"
+CLIENT_SECRET = "[YOUR CLIENT SECRET]"
+REDIRECT_URI = "[URI]"
 
 date = input("Which year do you want to travel to? Type the date in this format YYYY-MM-DD: ")
 
@@ -28,7 +28,7 @@ for music in music_hot_100:
 sp = spotipy.Spotify(
     auth_manager=SpotifyOAuth(
         scope="playlist-modify-private",
-        redirect_uri="http://example.com",
+        redirect_uri="[URI]",
         client_id=CLIENT_ID,
         client_secret=CLIENT_SECRET,
         show_dialog=True,
